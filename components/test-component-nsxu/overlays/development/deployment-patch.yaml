@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-nsxu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-tfni-tenant/test-app-fgkj/test-component-nsxu@sha256:bb3db624001637f16af184534832822ddc6b54cbc9f1658a50a4c8e092f552fe
+        name: my-python
+        resources: {}
+status: {}
